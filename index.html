@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- fontawsome -->
-    <script src="https://kit.fontawesome.com/307f30205f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +13,6 @@
     <title>Fruit Burst</title>
     <style>
         *{
-            font-family: 'Lato', sans-serif;
-        }
-        .lato{
             font-family: 'Lato', sans-serif;
         }
     </style>
@@ -37,11 +31,11 @@
         }
       </script>
 </head>
-<body class="lato">
+<body>
     <!-- nav section -->
     <header class="container mx-auto" >
         <div class="max-w-screen-2xl mx-auto my-4 lg:my-12">
-            <div class="bg-white lg:bg-color1 lg:rounded-r-full  lg:rounded-l-full flex justify-between items-center py-4 px-4 lg:px-10 w-full">
+            <div class="bg-white lg:bg-color1 lg:rounded-r-full  lg:rounded-l-full flex justify-between items-center py-4 pr-6 pl-4 lg:px-10 w-full">
            
                 <div class="hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-white text-lg">
@@ -62,7 +56,7 @@
                    <label tabindex="0" class="  text-black lg:hidden w-6 h-6">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm -left-24 top-2 dropdown-content mt-3 z-[1] p-2 shadow bg-[#f15759f3] text-white rounded-box w-32">
+                    <ul tabindex="0" class="menu menu-sm -left-24 top-2 dropdown-content mt-3 z-[1] p-2 shadow bg-[#f15759f3] text-white rounded-box w-[8.5rem]">
                         <li><div class="relative">
                         
                             <input type="search" class="w-[110px] h-[40px] rounded-r-full rounded-l-full pl-2 -ml-2 placeholder:text-xs" placeholder="Search here" >
@@ -178,8 +172,37 @@
             </div>
 
           </div>
-          
-
+    </section>
+    <!-- deal section -->
+    <section class="max-w-screen-2xl mx-auto mt-[40px] lg:mt-[15rem] mb-16">
+        <div class=" flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-[28rem]">
+            <div class="flex flex-col gap-4 lg:gap-8 justify-center items-center lg:items-start w-full lg:max-w-[615px]">
+                <h1 class="text-2xl lg:text-5xl font-black text-[#121212]">Deal of the day</h1>
+                <p class="text-center lg:text-left text-sm lg:text-base text-[#121212BB] leading-4 w-[277px] lg:w-[615px] lg:leading-[26px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex justify-center items-center gap-0 lg:gap-4 w-full lg:w-1/2">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl lg:text-5xl font-black mt-6 mb-2">29</h1>
+                    <p class="text-[#121212BB] text-base">Days</p>
+                </div>
+                <img src="./images/dot.svg" class="w-6 h-6 text-[#121212]" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl lg:text-5xl font-black mt-6 mb-2">15</h1>
+                    <p class="text-[#121212BB] text-base">Hours</p>
+                </div>
+                <img src="./images/dot.svg" class="w-6 h-6 text-[#121212]" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl lg:text-5xl font-black mt-6 mb-2">25</h1>
+                    <p class="text-[#121212BB] text-base">Minutes</p>
+                </div>
+                <img src="./images/dot.svg" class="w-6 h-6 text-[#121212]" alt="">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-4xl lg:text-5xl font-black mt-6 mb-2">08</h1>
+                    <p class="text-[#121212BB] text-base">Seconds</p>
+                </div>
+                
+            </div>
+        </div>
 
     </section>
     
