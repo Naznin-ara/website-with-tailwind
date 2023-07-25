@@ -7,26 +7,76 @@
     <script src="https://kit.fontawesome.com/307f30205f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <!-- tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Fruit Burst</title>
+    <style>
+        .lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
+                dark: '#121212' ,
+               text: '#12121299' ,
+               color1: '#F85559'
               }
             }
           }
         }
       </script>
 </head>
-<body>
-    <div>
-        <i class="fa-solid fa-ellipsis-vertical text-black"></i>
-    </div>
+<body class="lato">
+    <header class="container mx-auto" >
+        <div class="w-full lg:max-w-screen-xl mx-auto my-4 lg:my-12">
+            <div class="bg-white lg:bg-color1 lg:rounded-r-full  lg:rounded-l-full flex justify-between items-center py-4 px-4 lg:px-8 w-full">
+           
+                <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-white text-lg">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul> 
+                </div>
+                <div class="flex justify-between w-full lg:w-1/3  items-center">
+                    <div class="flex justify-center items-center gap-2">
+                        <img class="w-7 lg:w-14 h-8 lg:h-[60px]" src="./images/logo.png" alt="">
+                        <a class=" normal-case text-xl lg:text-4xl font-bold text-black lg:text-white">Fruit Burst</a>
+                    </div>
+                    
+                  <div class="dropdown ">
+                   
+                   <label tabindex="0" class="  text-black lg:hidden w-6 h-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm -left-24 top-2 dropdown-content mt-3 z-[1] p-2 shadow bg-color1 text-white rounded-box w-32">
+                      <li><a>Home</a></li>
+                      <li><a>About us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  
+                </div>
+                <div class="relative hidden lg:flex">
+                        
+                    <input type="search" class="w-[400px] h-[56px] rounded-r-full rounded-l-full pl-4 placeholder:text-lg" placeholder="Search here..." >
+                    <img src="./images/search.svg" class="absolute text-text right-6 top-4 text-lg" alt="">
+                   
+                </div>
+              </div>
+        </div>
+        
+    </header>
    
 </body>
 </html>
