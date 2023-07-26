@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fontawsome -->
-    <script src="https://kit.fontawesome.com/307f30205f.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/307f30205f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,7 +53,7 @@
                   </ul> 
                 </div>
                 <div class="flex justify-between w-full lg:w-1/3  items-center">
-                    <div class="flex justify-center items-center gap-2 lg:ml-[4.75rem]">
+                    <div class="flex justify-center items-center gap-2 ml-2 md:ml-4 lg:ml-[4.75rem]">
                         <img class="w-7 lg:w-14 h-8 lg:h-[60px]" src="./images/logo.png" alt="">
                         <a class=" normal-case text-xl lg:text-4xl font-bold text-black lg:text-white">Fruit Burst</a>
                     </div>
@@ -102,7 +102,7 @@
     </div>
   </div>
 </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 md:left-[2.25rem] right-5 md:right-[3.25rem] top-1/2">
                 <a href="#slide4" class="btn btn-circle bg-black text-white border-0 hover:text-black">❮</a> 
                 <a href="#slide2" class="btn btn-circle bg-black text-white border-0 hover:text-black">❯</a>
               </div>
@@ -118,7 +118,7 @@
    </div>
  </div>
 </div>
-             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 md:left-[2.25rem] right-5 md:right-[3.25rem] top-1/2">
                <a href="#slide1" class="btn btn-circle bg-black text-white border-0 hover:text-black">❮</a> 
                <a href="#slide3" class="btn btn-circle bg-black text-white border-0 hover:text-black">❯</a>
              </div>
@@ -134,7 +134,7 @@
 </div>
 </div>
 </div>
-         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 md:left-[2.25rem] right-5 md:right-[3.25rem] top-1/2">
            <a href="#slide2" class="btn btn-circle bg-black text-white border-0 hover:text-black">❮</a> 
            <a href="#slide4" class="btn btn-circle bg-black text-white border-0 hover:text-black">❯</a>
          </div>
@@ -150,7 +150,7 @@
 </div>
 </div>
 </div>
-     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 md:left-[2.25rem] right-5 md:right-[3.25rem] top-1/2">
        <a href="#slide3" class="btn btn-circle bg-black text-white border-0 hover:text-black">❮</a> 
        <a href="#slide1" class="btn btn-circle bg-black text-white border-0 hover:text-black">❯</a>
      </div>
@@ -212,12 +212,13 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16 justify-items-center">
             <!-- first card -->
-            <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl">
+            <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl hover:bg-gradient-to-r from-[#f000002f] to-[#ff883844] hover:duration-500">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit6.png" alt="apple" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center gap-6">
-                  <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                  <h2 class="card-title text-2xl font-bold text-[#121212] border-b-[1px] py-3">12.90$ - 18.85$</h2>
+                  
                   <p>Apples</p>
                   <div class="rating gap-2">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-color1" />
@@ -227,7 +228,7 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-color1" />
                   </div>
                   <!-- Open the modal using ID.showModal() method -->
-<button class="text-lg font-bold text-color1 " onclick="my_modal_1.showModal()">Details</button>
+<button class="text-lg font-bold text-color1 py-4 px-10 rounded-lg hover:text-white hover:bg-gradient-to-r from-[#f00000] to-[#ff8838] hover:shadow-md hover:duration-300" onclick="my_modal_1.showModal()">Details</button>
 <dialog id="my_modal_1" class="modal">
   <form method="dialog" class="modal-box flex flex-col justify-center items-center lg:py-6 lg:px-8">
     <img class="w-[80px] h-[80px]" src="./images/fruit6.png" alt="">
@@ -250,12 +251,12 @@
                 </div>
               </div>
               <!-- second card -->
-              <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl">
+              <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl hover:bg-gradient-to-r from-[#f000002f] to-[#ff883844] hover:duration-500">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit7.png" alt="orange" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center gap-6">
-                  <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                  <h2 class="card-title text-2xl font-bold text-[#121212] border-b-[1px] py-3">12.90$ - 18.85$</h2>
                   <p>Oranges</p>
                   <div class="rating gap-2">
                     <input type="radio" name="rating-3" class="mask mask-star-2 bg-color1" />
@@ -265,7 +266,7 @@
                     <input type="radio" name="rating-3" class="mask mask-star-2 bg-color1" />
                   </div>
                   <!-- Open the modal using ID.showModal() method -->
-<button class="text-lg font-bold text-color1 " onclick="my_modal_2.showModal()">Details</button>
+<button class="text-lg font-bold text-color1 py-4 px-10 rounded-lg hover:text-white hover:bg-gradient-to-r from-[#f00000] to-[#ff8838] hover:shadow-md hover:duration-300" onclick="my_modal_2.showModal()">Details</button>
 <dialog id="my_modal_2" class="modal">
   <form method="dialog" class="modal-box flex flex-col justify-center items-center lg:py-6 lg:px-8">
     <img class="w-[80px] h-[80px]"  src="./images/fruit7.png" alt="">
@@ -288,12 +289,12 @@
                 </div>
               </div>
               <!-- third card -->
-              <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl">
+              <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl hover:bg-gradient-to-r from-[#f000002f] to-[#ff883844] hover:duration-500">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit8.png" alt="Dragon Fruits" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center gap-6">
-                  <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                  <h2 class="card-title text-2xl font-bold text-[#121212] border-b-[1px] py-3">12.90$ - 18.85$</h2>
                   <p>Red Dragon</p>
                   <div class="rating gap-2">
                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-color1" />
@@ -303,7 +304,7 @@
                     <input type="radio" name="rating-4" class="mask mask-star-2 bg-color1" />
                   </div>
                   <!-- Open the modal using ID.showModal() method -->
-<button class="text-lg font-bold text-color1 " onclick="my_modal_3.showModal()">Details</button>
+<button class="text-lg font-bold text-color1 py-4 px-10 rounded-lg hover:text-white hover:bg-gradient-to-r from-[#f00000] to-[#ff8838] hover:shadow-md hover:duration-300" onclick="my_modal_3.showModal()">Details</button>
 <dialog id="my_modal_3" class="modal">
   <form method="dialog" class="modal-box flex flex-col justify-center items-center lg:py-6 lg:px-8">
     <img class="w-[80px] h-[80px]" src="./images/fruit8.png" alt="">
@@ -326,12 +327,12 @@
                 </div>
               </div>
               <!-- fourth card -->
-              <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl">
+              <div class="card w-[80%] lg:w-[346px] bg-white border-[1px] border-[#1212121A] shadow-md hover:shadow-xl hover:bg-gradient-to-r from-[#f000002f] to-[#ff883844] hover:duration-500">
                 <figure class="px-10 pt-10">
                   <img src="./images/fruit9.png" alt="banana" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center gap-6">
-                  <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                  <h2 class="card-title text-2xl font-bold text-[#121212] border-b-[1px] py-3">12.90$ - 18.85$</h2>
                   <p>Banana</p>
                   <div class="rating gap-2">
                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-color1" />
@@ -341,7 +342,7 @@
                     <input type="radio" name="rating-5" class="mask mask-star-2 bg-color1" />
                   </div>
                   <!-- Open the modal using ID.showModal() method -->
-<button class="text-lg font-bold text-color1 " onclick="my_modal_4.showModal()">Details</button>
+<button class="text-lg font-bold text-color1 py-4 px-10 rounded-lg hover:text-white hover:bg-gradient-to-r from-[#f00000] to-[#ff8838] hover:shadow-md hover:duration-300" onclick="my_modal_4.showModal()">Details</button>
 <dialog id="my_modal_4" class="modal">
   <form method="dialog" class="modal-box flex flex-col justify-center items-center lg:py-6 lg:px-8">
     <img class="w-[80px] h-[80px]"  src="./images/fruit9.png" alt="">
@@ -366,7 +367,7 @@
 
         </div>
         <div class="flex justify-center items-center w-full mt-6 lg:mt-20">
-            <button class="bg-color1 rounded-lg text-sm lg:text-xl text-white w-[130px] lg:w-[150px] h-[30px] lg:h-[64px] px-6 py-6 lg:py-8 flex items-center justify-center border-none">Shop All</button>
+            <button class="bg-color1 rounded-lg text-sm lg:text-xl text-white w-[130px] lg:w-[150px] h-[30px] lg:h-[64px] px-6 py-6 lg:py-8 flex items-center justify-center border-none hover:bg-orange-200 hover:text-gray-700 hover:duration-300">Shop All</button>
         </div>
 
     </section>
@@ -498,8 +499,8 @@
       <img class="w-full " src="./images/whychoose1.png" alt="">
     </div>
   </div>
-  <div class="flex justify-center items-start gap-12 flex-col mt-6 ">
-    
+  <div class="flex justify-center items-center lg:items-start gap-12 flex-col mt-6 ">
+     
     <div class="flex justify-center items-center gap-6 flex-col-reverse lg:flex-row">
      
       <div class="flex flex-col items-center lg:items-end justify-center relative">
