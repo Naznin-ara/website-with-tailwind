@@ -26,6 +26,15 @@
           background:linear-gradient(45deg , #f79e6b, #fc8181);
 
         }
+        #drop-menu{
+          transition:all 0.5s ease-in-out; 
+        }
+        #drop-menu:hover{
+          transform: scaleX(1.3);
+        }
+        #search:hover ~ #search-icon{
+         visibility: hidden;
+        }
         
     </style>
     <script>
@@ -68,11 +77,11 @@
                    <label tabindex="0" class="  text-black  lg:hidden w-6 h-6">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm -left-28 top-2 dropdown-content mt-3 z-[1] p-2 shadow text-gray-800 bg-gradient-to-r from-[#ff8e8e] to-[#f8aa75] hover:shadow-md hover:duration-300  rounded-lg w-[8.5rem]">
-                        <li><div class="relative">
+                    <ul tabindex="0" id="drop-menu" class=" menu menu-sm -left-28 top-2 dropdown-content mt-3 z-[1] p-2 shadow text-gray-800 bg-gradient-to-r from-[#ff8e8e] to-[#f8aa75] hover:shadow-lg  rounded-lg w-[8.5rem]">
+                        <li><div class="relative hover:w-[10rem]">
                         
-                            <input type="search" class="w-[110px] h-[40px] rounded-r-full rounded-l-full pl-2 -ml-2 placeholder:text-xs" placeholder="Search here" >
-                            <img src="./images/search.svg" class="absolute text-text right-6 top-4 w-4" alt="">
+                            <input type="search" id="search" class="w-[110px] h-[40px] rounded-r-full rounded-l-full pl-2 -ml-2 placeholder:text-xs" placeholder="Search here" >
+                            <img src="./images/search.svg" class="absolute text-text right-7 top-4 w-4 " id="search-icon" alt="">
                            
                         </div></li>
                       <li class=" hover:bg-color1 hover:text-white hover:rounded-lg"><a>Home</a></li>
